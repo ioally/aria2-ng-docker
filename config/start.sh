@@ -6,8 +6,8 @@ if [ ! -f /conf/aria2.conf ]; then
 	fi
 fi
 
-mkdir /data/.aria2
-touch /data/.aria2/aria2.session
+mkdir /etc/aria2
+touch /etc/aria2/aria2.session
 
 nginx -g "daemon off;" &
 aria2c --conf-path=/conf/aria2.conf
